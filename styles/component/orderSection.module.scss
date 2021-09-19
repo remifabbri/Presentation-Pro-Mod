@@ -1,0 +1,163 @@
+@import '../mixin';
+
+.blockOrderSection{
+    height: 100%;
+    padding: 10px; 
+    border: 1px solid lightgrey;
+    border-top: 10px solid orange;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    p{
+        margin-bottom: 5px;
+    }
+}
+
+.preparation{
+    border-top: 10px solid orange;
+}
+
+.prete{
+    border-top: 10px solid rgb(60, 208, 109);
+}
+
+.deliver{
+    border-top: 10px solid rgb(60, 107, 208);
+}
+
+
+.headerStatus{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 20px 0px;  
+}
+
+.statusEnregistre{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .circle{
+        height: 10px; 
+        width: 10px;
+        background-color: orange;
+        border-radius: 50%;
+    }
+
+    span{
+        padding: 5px 10px; 
+        border-radius: 10px;
+        color: orange;
+        font-weight: semi-bold;
+    }
+}
+.statusPrete{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .circle{
+        height: 10px; 
+        width: 10px;
+        background-color: rgb(60, 208, 109);
+        border-radius: 50%;
+    }
+
+    span{
+        padding: 5px 10px; 
+        border-radius: 10px;
+        color: rgb(60, 208, 109);
+        font-weight: semi-bold;
+    }
+}
+
+.statusDeliver{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .circle{
+        height: 10px; 
+        width: 10px;
+        background-color: rgb(60, 107, 208);
+        border-radius: 50%;
+    }
+
+    span{
+        padding: 5px 10px; 
+        border-radius: 10px;
+        color: rgb(60, 107, 208);
+        font-weight: semi-bold;
+    }
+}
+
+.detailOrder{
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: space-around;
+    align-items: center;
+
+    .prix{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .verticalSeparation{
+        height: 35px; 
+        width: 2px;
+        margin: 0 10px; 
+        background-color: slategray;
+    }
+
+    .infos{
+        display: flex; 
+        flex-flow: column nowrap; 
+        
+        p{
+            font-size: 14px;
+        }
+
+    }
+    
+}
+
+
+.rowLinkAction{
+    display: flex; 
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px
+}
+
+
+.btnActionEtapeSuivant{
+    @include linkActionPrimaryGoogleUi;
+    
+    .icon{
+        -webkit-mask: url("/images/icons/navigate_next-black.svg") no-repeat center;
+        mask: url("/images/icons/navigate_next-black.svg") no-repeat center;
+    }
+}
+
+.btnActionDetailProduit{
+    @include linkActionTertiaryGoogleUi;
+
+    .icon{
+        -webkit-mask: url("/images/icons/inventory_2_black.svg") no-repeat center;
+        mask: url("/images/icons/inventory_2_black.svg") no-repeat center;
+    }
+}
+
+.btnActionDiscussion{
+    @include linkActionSecondaryGoogleUi;
+
+    .icon{
+        -webkit-mask: url("/images/icons/chat_bubble_black.svg") no-repeat center;
+        mask: url("/images/icons/chat_bubble_black.svg") no-repeat center;
+    }
+}

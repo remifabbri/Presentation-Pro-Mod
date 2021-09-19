@@ -1,0 +1,63 @@
+
+.headerProduct{
+    display: flex; 
+    flex-flow: row nowrap;
+    
+}
+
+
+.blockImg{
+    width: 50%;
+
+    img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.blockAction{
+    width: 50%; 
+    display: flex; 
+    flex-flow: column nowrap; 
+    padding: 10px; 
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .choise{
+        margin: 20px 10px;
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .blockRefPrixBtnAddCart{
+        display: flex;
+        flex-flow: column nowrap;
+        
+
+        .rowRefprice{
+            display: flex; 
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            margin: 20px 0px;
+
+            label, p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.blockAttribute{
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: space-between;
+    padding: 10px; 
+    border-bottom: 1px solid lightgray;
+}
+
+.titleProduitMoment{
+    margin-top: 50px;
+}

@@ -1,0 +1,89 @@
+@import '../mixin';
+
+.blockprofilSection{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px; 
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 100%;
+    @include gradient-box-effect;
+
+    &:hover{
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    div p:first-child{
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+}
+
+.roundIcon{
+    height: 40px; 
+    width: 40px;
+    border-radius: 50%;
+    color: $fontColor; 
+    text-decoration: none;
+    border: none;
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: center;
+    align-items: center;
+    // @include gradient-box-circle;
+   
+    // position: relative;
+    // box-sizing: border-box;
+    // $border: 2px;
+    // color: #000;
+    background: #fff;
+    // background-clip: padding-box; /* !importanté */
+    // border: solid $border transparent; /* !importanté */
+
+
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0; right: 0; bottom: 0; left: 0;
+    //     z-index: -1;
+    //     margin: -$border; /* !importanté */
+    //     border-radius: inherit; /* !importanté */
+    //     background: linear-gradient(to right, $primColor, $secondColor);
+    // }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    img{
+        height: 75%;
+     
+    }
+
+}
+
+
+// .blockLink{
+//     display:flex; 
+//     flex-flow: row nowrap;
+//     justify-content: center;
+//     align-items:center;
+//     height: max-content;
+//     width: 100%;
+//     padding: 5px 15px; 
+//     color: $fontColor; 
+//     text-decoration: none;
+//     border: none;
+//     border-radius: 35px;
+   
+  
+//     img{
+//       display: block;
+//       height: 24px;
+//       width: 24px;
+//     //   filter: invert(100%); // black to white
+//     }
+//   }

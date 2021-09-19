@@ -1,0 +1,167 @@
+@import '../mixin';
+
+
+// ***************************
+// *************************** Page Gestion Agenda
+// ***************************
+
+.menuGestionAgenda{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.BtnOngletGestion{
+    @include btnActionSecondaire;
+}
+.BtnOngletGestionAction{
+    @include btnActionPrincipale;
+}
+  
+
+// ***************************
+// *************************** Agenda
+// ***************************
+
+.rowDay{
+    display: flex; 
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    padding: 10px 0px; 
+    margin-top: 20px;
+
+    @include scrollbarStyle;
+
+    button{ 
+        display: flex;
+        flex-flow: row nowrap; 
+        align-items: center;
+        min-width: 50px;
+        margin-right: 5px; 
+    }    
+}
+
+.blockHoraireAgenda{
+    display:flex; 
+    flex-flow: row wrap; 
+    // justify-content: space-between;
+    // align-items: center;
+    padding: 10px;
+    width: 100%; 
+
+    button{
+        min-width: 75px;
+        margin: 5px;
+        
+    }
+    button:last-child{
+        margin: 5px; 
+        margin-right: auto ; 
+    }
+}
+
+.btnDisable{
+    padding: 8px 16px;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    border-radius: 10px;
+}
+
+.btnCloseHoraire{
+    position: relative; 
+    padding: 8px 16px;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    border-radius: 10px;
+
+    &:before{
+        content:"Fermé";
+        color: red;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute; 
+        top: 0; 
+        left: 50%; 
+        transform: rotate(-30deg) translateX(-28%);
+    }
+}
+
+
+
+
+// ***************************
+// *************************** Param horaire
+// ***************************
+
+.labelJour{
+    font-weight: bold;
+}
+
+.labelClose{
+    margin: 10px; 
+    color: red;
+    font-weight: 600;
+}
+
+.blockJour{
+    margin-bottom: 25px;
+}
+
+.blockTancheHoraire{
+    display: flex; 
+    flex-flow: row nowrap; 
+    
+    margin: 10px; 
+}
+
+.blockHoraire{
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: center;
+}
+
+.blockSelect{
+    display: flex; 
+    flex-flow: column nowrap;
+    margin-right: 20px;
+}
+
+.btnSupTH{
+    border: none; 
+    background-color: transparent;
+    width: 30px;
+    padding: 0px;
+
+    img{
+        height: 100%;
+    }
+}
+
+.BtnAddTh{
+    @include btnActionPrincipale;
+}
+
+
+
+// ***************************
+// *************************** Page Horaire de Retrait
+// ***************************
+
+
+.BtnValidationHoraireDisable{
+    padding: 8px 16px;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 25px; 
+}
+
+.BtnValidationHoraire{
+    @include btnActionSecondaire;
+    width: 100%;
+    margin-top: 25px;
+}

@@ -1,0 +1,120 @@
+.blockDetailProduct{
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.blockDetailProduct > div:first-child{
+    border-top: 1px solid lightgray;
+}
+
+.item{
+    display: flex;
+    flex-flow: row nowrap; 
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+
+
+    div:first-child{
+        
+    }
+    div{
+        border-right: 1px solid lightgray;
+    }
+
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60px;
+        padding: 1px;
+        
+        img{
+            max-height: 90%;
+            max-width: 60px;
+        }
+    }
+
+    .name{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex: 6; 
+        
+        p{
+            padding: 10px;
+        }
+    }
+    .ref{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 2;  
+    }
+
+    .count{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 1;
+    }
+    .price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 2;
+    }
+}
+
+.rowtotal{
+    display: flex;
+    flex-flow: row nowrap; 
+    justify-content:flex-end;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+
+    div{
+        border-right: 1px solid lightgray;
+    }
+
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60px; 
+        border-right: none;
+    }
+
+    .espace{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 8;
+    }
+    
+    .totalCount{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 1;
+    }
+    .totalPrice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 2;
+    }
+}
